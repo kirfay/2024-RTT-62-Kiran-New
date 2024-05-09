@@ -80,12 +80,13 @@ public class JavaBasics {
         //Write a program where you create three variables that represent products at a cafe.
         // The products could be beverages like coffee, cappuccino, espresso, green tea, etc.
         // Assign prices to each product.
-        double coffee = 2.50;
-        double cappuccino = 3.50;
-        double espresso = 4.50;
+       // double coffee = 2.50;
+        //double cappuccino = 3.50;
+       // double espresso = 4.50;
 
-        double subtotal = (coffee * 3) + (cappuccino * 4) + (espresso * 2);
-        double totalSale = subtotal + salesTaxAmount;
+       // double subtotal = (coffee * 3) + (cappuccino * 4) + (espresso * 2);
+      //  double salesTaxAmount;
+       // double totalSale = subtotal + salesTaxAmount;
 
 
 
