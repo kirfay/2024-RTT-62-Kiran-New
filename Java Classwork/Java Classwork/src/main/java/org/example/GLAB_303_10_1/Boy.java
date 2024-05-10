@@ -1,16 +1,6 @@
 package org.example.GLAB_303_10_1;
 
-public class Boy {
-    public static boolean lifeSpan() {
-    }
-
-    public boolean talk() {
-    }
-
-    public boolean walk() {
-    }
-
-    public class Boy extends Person {
+public class Boy extends Person {
         static double ageFactor = 1.1;
 
         public String talk() {
@@ -21,4 +11,4 @@ public class Boy {
             return ("I am now walking");
         }
     }
-}
+

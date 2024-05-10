@@ -43,4 +43,3 @@ public class TestPeople {
         System.out.println(((Boy) aPerson).talk());
     }
 }
-

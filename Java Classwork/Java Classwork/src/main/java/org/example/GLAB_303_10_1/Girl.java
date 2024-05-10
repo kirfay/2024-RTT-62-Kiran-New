@@ -1,37 +1,23 @@
 package org.example.GLAB_303_10_1;
 
-public class Girl {
-    public Girl(String betty) {
+public class Girl extends Person {
+    static double ageFactor = 1.3;
 
+    public Girl(String aName) {
+        name = "Ms." + aName;
     }
 
-    public static boolean lifeSpan() {
+    public String talk() {
+        return ("Hello! " + jump());
     }
 
-    public boolean talk() {
+    public String jump() {
+        return ("I am jumping.");
     }
 
-    public boolean walk() {
-    }
-
-    public class Girl extends Person {
-        static double ageFactor = 1.3;
-
-        public Girl(String aName) {
-            name = "Ms." + aName;
-        }
-
-        public String talk() {
-            return ("Hello! " + jump());
-        }
-
-        public String jump() {
-            return ("I am jumping.");
-        }
-
-        public static double lifeSpan() {
-            return (lifeSpan * ageFactor);
-        }
+    public static double lifeSpan() {
+        return (lifeSpan * ageFactor);
     }
 }
+
     
