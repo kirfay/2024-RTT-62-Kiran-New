@@ -4,7 +4,6 @@ import java.util.Collections;
 import java.util.LinkedList;
 
 public class LinkedListsortExample {
-    public class LinkedListsortExample {
         public static void main(String[] args)
         {
             //Create linked list
@@ -31,4 +30,4 @@ public class LinkedListsortExample {
         }
     }
 
-}
+

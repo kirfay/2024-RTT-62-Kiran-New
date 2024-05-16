@@ -1,5 +1,7 @@
 package org.example.GLAB_303_11_5;
 
+import java.util.HashSet;
+
 public class Examplefour {
     public static void main(String args[]) {
         // HashSet declaration

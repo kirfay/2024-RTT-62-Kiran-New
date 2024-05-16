@@ -3,7 +3,7 @@ package org.example.GLAB_303_11_3;
 import java.util.ArrayList;
 import java.util.Iterator;
 
-public class showData {
+public class ShowData {
     public static void main(String[] args) {
         // instantioation to class AddDataToArrayList
         AddDataToArrayList b = new AddDataToArrayList();

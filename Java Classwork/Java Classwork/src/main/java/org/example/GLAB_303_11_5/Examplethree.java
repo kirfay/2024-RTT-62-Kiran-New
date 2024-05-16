@@ -1,5 +1,7 @@
 package org.example.GLAB_303_11_5;
 
+import java.util.HashSet;
+
 public class Examplethree {
     public static void main(String[] args) {
         HashSet<Integer> primeNumbers = new HashSet<>();
