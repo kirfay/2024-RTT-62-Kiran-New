@@ -37,7 +37,7 @@ public class ProductReader {
         String[] column = line.split(regex: ",");
         result.setName(column[0]);
         result.setPrice(Double.parseDouble(column[1]));
-        result.setQuantityAvailable
+        Object setQuantityAvailable = result.setQuantityAvailable1;
 
     }
     public static void main(String[] args) {
