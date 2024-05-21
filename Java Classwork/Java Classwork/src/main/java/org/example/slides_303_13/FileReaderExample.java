@@ -3,7 +3,7 @@ package org.example.slides_303_13;
 import java.io.File;
 import java.io.FileReader;
 
-public class FileReaderExample {
+/*public class FileReaderExample {
 
     public static void main(String[] args) {
         try {
@@ -11,4 +11,4 @@ public class FileReaderExample {
             FileReader fileReader = new FileReader(input);
         }
     }
-}
+}*/

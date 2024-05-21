@@ -1,17 +1,17 @@
 package org.example.coffeeshop;
 
-import java.io.BufferedReader;
-import java.io.FileReader;
-import java.util.ArrayList;
-import java.util.List;
+/*import java.io.BufferedReader;
+//import java.io.FileReader;
+//import java.util.ArrayList;
+//import java.util.List;
 
-public class ProductReader {
+//public class ProductReader {
 
-    public List<Product> readProducts() {
-        List<Product> products = new ArrayList<>();
+   // public List<Product> readProducts() {
+        //List<Product> products = new ArrayList<>();
 
-        try {
-            File file = new File("products.csv");
+        //try {
+          //  File file = new File("products.csv");
             FileReader fileReader = new FileReader(file);
             BufferedReader bufferedReader = new BufferedReader(fileReader);
 
@@ -45,5 +45,5 @@ public class ProductReader {
         pr.readProducts();
     }
 
-}
+}*/
 

@@ -3,7 +3,7 @@ package org.example.slides_303_13;
 import java.io.File;
 import java.io.IOException;
 
-public class FileExample {
+/*public class FileExample {
 
     public static void main(String[] args) {
         //
@@ -14,4 +14,4 @@ public class FileExample {
     } cath (IOException e) {
 
     }
-}
+}*/

@@ -4,7 +4,7 @@ import java.io.FileWriter;
 import java.io.IOException;
 
 
-public class FileWriterExample {
+/*public class FileWriterExample {
 
     public static void main (String[] args) {
 
@@ -14,11 +14,11 @@ public class FileWriterExample {
 
             FileWriter filewriter = new FileWriter(output);
 
-            filewriter.write(str:"This is my first sentence writing to a file.")
+            filewriter.write(String:"This is my first sentence writing to a file.")
             fileWriter.flush();
 
         } catch (IOException e) {
             e.printStackTrace();
         }
     }
-}
+}*/
