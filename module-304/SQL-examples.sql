@@ -1,0 +1,1 @@
+select customer_name, phone, address_line1 from customers;
