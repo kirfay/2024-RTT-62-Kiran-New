@@ -20,7 +20,7 @@ public class Employee {
     @Id //this is telling hibernate this column is the PK
     @GeneratedValue(strategy = GenerationType.IDENTITY) //this is telling hibernate that the PK is auto increment
     @Column(name = "id")
-    private int id;
+    private Integer id;
 
     @Column(name = "office_id")
     private Integer officeId;
@@ -38,7 +38,7 @@ public class Employee {
     private String email;
 
     @Column(name = "reports_to")
-    private String reportsTo;
+    private Integer reportsTo;
 
     @Column(name = "job_title")
     private String jobTitle;
