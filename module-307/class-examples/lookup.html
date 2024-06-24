@@ -6,7 +6,12 @@
     <title>Document</title>
 </head>
 <body>
-    <h1 id="h1Tag"> This is a header tag</h1>
+    <style>
+        
+    </style>
+    <h1 id="h1Tag" class="class1 class2"> This is a header tag 1</h1>
+    <h1 name="inputText" class="class2"> This is a header tag 2</h1>
+    <h1 name="inputText" class="class1"> This is a header tag 3</h1>
 
     <script>
         let element = document.getElementById("h1Tag");
@@ -23,8 +28,15 @@
             console.log(tag)
 
         }
-        console.log("======== getElementsByClassName =======");
-        let 
+        // find all elements with a CSS Class on them
+        // this is the most common way of looking for elements in the DOM tree
+        console.log("================= getElementsByClassName =================");
+        let classItems = document.getElementsByClassName("class1");
+
+        for (let classItem of classItems) {
+            console.log(classItem);
+            classItem.style.color = "RED";
+        }
     </script>
 </body>
 </html>
