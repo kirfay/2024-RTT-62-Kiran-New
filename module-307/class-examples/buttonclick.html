@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button>Click me</button>
+    <p>Try to change me.</p>
+    <script>
+      const button = document.querySelector('button');
+      // Function to modify the text content of the paragraph
+      function changeText() {
+        const p = document.querySelector('p');
+        p.textContent = "Changed because of an event handler property.";
+        button.textContent = "I was clicked";
+      }
+      // Add event handler as a property of the button element
+      <button onclick="changeText()">Click me</button>
+      <p>Try to change me...</p>
+
+    </script>
+
+</body>
+</html>

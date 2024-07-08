@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    // this is a comment in Javascript
+    let a = "Hello world"; // l is position 9 start at 0 same as in Java
+    console.log(a.substring(4,7));
+
+    // what is z going to print?
+    // watch for the " " because that is a string and will not evaluate the math
+    let x = 5;
+    let y = 6;
+    let z = ("x*y");
+    let b = x * y;
+
+    console.log(z);
+
+    // the difference between == and ===
+    // not only is it a KBA question but it is important to know also 
+    // === compares not only the value but the data type as well
+    console.log("1" == 1 ); // true
+    console.log("1" == "1"); //true
+    console.log(1 == 1) // true
+    console.log("1" === 1 ) // false (interview question == vs ===) 
+    // strictly equals (3 equals) will check the datatype as well as the contents while == will only check contents.
+    // They are called Loose Equal and Strict Equal
+    console.log(1 === 1 ) // true
+
+    // one difference between let and var is you can only define something
+    // using let once in the same code block, with var it will allow more than once
+    let abc = '123';
+    abc = "something else";
+    // let abc = "abc123"; // <--- this line is an error because abc is already defined
+    // var will allow more than once in the same code block, also
+    // this is bad practive to do this. use let instead of var
+    var xyz = "123"
+    var xyz = "abc";
+    // error in kba if you try to use let and then let again it will cause an error
+    console.log(xyz);
+
+    // how to make an alert box in javascript
+    // this can be nice for debugging
+    alert("some message to popup");
+    // be careful you use the word alert in the kba
+
+    // about languages; a variable can be of any type;
+    // JavaScript is a weakly typed language meaning a variable can be of any type and that type can change
+    // Java is strontly typed laguage meaning the datatype must be specified at compile time and can not change
+    // javaScript is a high level scripting language that is weakly typed kba question
+    // No HTML in external javascript files
+    // False! External javascript files can contain HTML
+    // in javascript we can concatinate strings using the +
+    let str = "Hello" + "world";
+    console.log(str);
+    // dates in javascript is very flexible; in java dates are very strict
+    let date1 = new Date("Thu Jan 29 2001 17:34:41");
+    let date2 = new Date("2024-01-29");
+    // getMonth seem to think that January is 0 not 1
+    console.log("Month = " + date1.getMonth());
+    console.log("Month = " + date2.getMonth());
+    console.log(date1.getMonth() === date2.getMonth());
+    // getMonth returns a number between 0 and 11
+    // why they made January month 0 is ???
+    // Onclick event handler
+    // continue and break works that same ways as it does in java
+    (let i = 0 ; i < 5 ; i++ ) {
+        if (i == 3 ) {
+            continue;
+            //break;
+        }
+        console.log(i);
+    }
+
+    // string work the same way they do in Java
+
+    // this is a true statement: Javascript is "safe" in that the browser does not allow 
+    // direct access to the memory or CPU
+    // common got you question: 
+    let trick = 8 + "8";
+    console.log(trick) // answer is 88 Number + string = string
+    // getElementsByTagName - find elements in the document by their HTML tag
+    // for example find all of the p tags
+    // getElementById - finds an element by the id = " " attribute
+    // we know that this will retrun a single element because id is unique
+
+    // getElementsByName - finds all elements with name= " " attribute
+    // most powerfull of all and most used querySelector - find all elements based on the CSS querySelector
+    // querySelector will find the first element in the document; 
+        // return a single value *** need to know for the KBA
+
+    // you can subtract a string from a string
+    // it is not causing a compile or run error
+    // NaN means ... not a number; not an error because it will execute and give the response of not a number
+        let q = "Hello" - "world";
+        console.log(q);
+
+    // for loops
+    let person = {
+        firstName : "Eric",
+        lastName : "Heilig",
+        eyeColor : "brown"
+    }    
+    // when we use in it loops over the keys
+    // in mean loop over the keys
+    for (let i in person ) {
+        console.log(i + " = " + person[i]);
+    }
+    // of is looping over the values of an array
+    let array = [ 1, 2, 3, 4];
+    for (let i of array) {
+        consol.log(i);
+    }
+
+    // continue= skip
+
+// 2 ways of registering an event listener
+// first is using the onClick = "funtion" on a html tag like we did in buttonclick.html
+// second using the addEventListner method built into the javascript language, this method is available
+// to use the addEventListner function first you have to query the element from the document
+// then you use the addEventListner('click', functionToRun());
+// listner...callback function
+
+// ** If you want to spend time reading about and experimenting with splice () and slice ()
+// True - Array.splice() changes the original array whereas Array.slice() does not
+
+// 308.4 slide #28 talks about creating new HTML elements
+// there are 2 ways of creating elements
+// document.createElement('p'); this will create a p tag in the document - can make all tags
+// createTextNode() // this only works for text nodes like a p tag
+
+// Javascript trivia about numbers that is on the KBA
+//
+    </script>
+    <h1> This is a test </h1>
+</body>
+</html>
