@@ -10,6 +10,8 @@ public class IndexController {
     public ModelAndView index() {
         // this function is for the home page of the website which is the expressed as just a plain slash "/"
         ModelAndView response = new ModelAndView("index");
+
+
         return response;
     }
 
