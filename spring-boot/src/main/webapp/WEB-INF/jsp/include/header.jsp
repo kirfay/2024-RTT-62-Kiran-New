@@ -1,3 +1,5 @@
+<%@ taglib prefix="sec" uri="http://www.springframework.org/security/tags" %>
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -21,12 +23,42 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="/">Home</a>
+                    <a class="nav-link" aria-current="page" href="/">Home</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="/page-url">2nd Page</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/search">Search</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/employee/create">Create Employee</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/file-upload">File Upload</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/account/create-account">Create Account</a>
+                </li>
+                <sec:authorize access="!isAuthenticated()">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/account/loginPageUrl">Login</a>
+                    </li>
+                </sec:authorize>
+                <sec:authorize access="isAuthenticated()">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/account/logout">Logout</a>
+                    </li>
+                    <li class="nav-item">
+                        <span class="nav-link"><sec:authentication property="name"/></span>
+                    </li>
+                    <sec:authorize access="hasAnyAuthority('ADMIN')">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/admin/dashboard">Admin Dashboard</a>
+                        </li>
+                    </sec:authorize>
+                </sec:authorize>
+
             </ul>
         </div>
     </div>
-</nav>

@@ -2,6 +2,7 @@ package com.example.springboot.database.entity;
 
 import jakarta.persistence.*;
 import lombok.*;
+
 @Setter
 @Getter
 @Entity
@@ -9,10 +10,7 @@ import lombok.*;
 @NoArgsConstructor
 @AllArgsConstructor
 @Table(name = "products")
-
-
 public class Product {
-
 
         @Id
         @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -46,7 +44,7 @@ public class Product {
         @Column(name = "msrp", columnDefinition = "DECIMAL")
         private Double msrp;
 
-    }
+}
 
 
 
