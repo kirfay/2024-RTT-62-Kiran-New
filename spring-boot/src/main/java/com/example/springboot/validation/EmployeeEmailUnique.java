@@ -8,6 +8,7 @@ import java.lang.annotation.*;
 @Constraint(validatedBy = EmployeeEmailUniqueImpl.class)
 @Target({ElementType.FIELD})
 @Retention(RetentionPolicy.RUNTIME)
+
 public @interface EmployeeEmailUnique {
 
     String message() default "{EmployeeEmailUnique}";
