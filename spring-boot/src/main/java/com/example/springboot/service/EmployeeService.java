@@ -30,7 +30,7 @@ public class EmployeeService {
             employee = new Employee();
         }
 
-        // here we are setting the values from the inoming form data onto the database entity
+        // here we are setting the values from the incoming form data onto the database entity
         employee.setEmail(form.getEmail());
         employee.setFirstname(form.getFirstName());
         employee.setLastname(form.getLastName());
@@ -43,7 +43,7 @@ public class EmployeeService {
         //employee.setOfficeId(1);
         employee.setOffice(office);
 
-        // when we save to the data base it will auto increment to give us a new id
+        // when we save to the database it will auto increment to give us a new id
         // the new ID is available in the return from the save method.
         // basically returns the same object .. after its been inserted into the database
         employee = employeeDao.save(employee);

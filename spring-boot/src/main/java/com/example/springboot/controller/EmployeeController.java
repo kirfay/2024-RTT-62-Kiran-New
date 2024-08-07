@@ -28,7 +28,7 @@ public class EmployeeController {
         // in phase 2 the autowired fields are set
         // in phase 3 the @PostConstruct method is called
 
-        // constructors are not longer used very much in spring
+        // constructors are no longer used very much in spring
     }
 
     @PostConstruct

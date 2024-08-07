@@ -24,7 +24,7 @@ public class EmployeeEmailUniqueImpl implements ConstraintValidator<EmployeeEmai
             return true;
         }
 
-        //UserMSQL user = userService.findByEmailIgnoreCase(value);
+        //UserMySQL user = userService.findByEmailIgnoreCase(value);
         Employee employee = employeeDao.findByEmailIgnoreCase(value);
 
         // this validation returns true when the email is NOT in the database
